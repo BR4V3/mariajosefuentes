@@ -1,6 +1,6 @@
 "use client";
 
-import { Image as ImageIcon, Video, Info } from "lucide-react";
+import { Image as ImageIcon, Video } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
@@ -36,14 +36,14 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
   es: [
     {
       semester: "Semestre 1",
-      description: "Inicio de formación técnica en terreno con foco en seguridad y orientación.",
+      description: "Base técnica inicial en montaña: equipamiento personal, marcha segura, interpretación y principios de no dejar rastro.",
       period: "Marzo - Julio 2024",
       terrains: [
         {
           id: 1,
-          title: "Terreno Santuario de la Naturaleza",
+          title: "Acercamiento a la montaña",
           reflection:
-            "Este terreno me permitió relacionar observación del entorno, desplazamiento y toma de decisiones seguras en un contexto natural real.",
+            "Este terreno marcó el inicio de la formación en montaña, con foco en técnicas base de progresión: uso correcto de bastones, ajuste técnico del calzado y selección adecuada de vestimenta para condiciones outdoor.",
           mediaItems: [
             {
               type: "image",
@@ -61,7 +61,7 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
           id: 2,
           title: "Terreno Técnicas de Marcha",
           reflection:
-            "Aquí reforcé técnica de desplazamiento, control del esfuerzo y lectura del ritmo grupal durante el avance en terreno.",
+            "Se fortalecieron competencias de desplazamiento seguro mediante técnicas de marcha, detención de gato e interpretación del entorno, incorporando además maniobras de descenso con y sin implementos.",
           mediaItems: [
             {
               type: "image",
@@ -87,9 +87,9 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
         },
         {
           id: 3,
-          title: "Terreno NDR",
+          title: "No dejar rastro y campamento",
           reflection:
-            "Este terreno aportó experiencia práctica adicional y sirve como respaldo audiovisual del progreso durante el semestre.",
+            "La jornada se orientó a la aplicación de principios No Dejar Rastro y al montaje técnico de campamento, consolidando estándares de mínimo impacto y buenas prácticas ambientales.",
           mediaItems: [
             {
               type: "video",
@@ -102,14 +102,14 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
     },
     {
       semester: "Semestre 2",
-      description: "Aplicación práctica de liderazgo y control de actividades outdoor en terreno.",
+      description: "Consolidación operativa en actividades de aventura: agua, rescate, primeros auxilios, interpretación y gestión de equipo.",
       period: "Agosto - Diciembre 2024",
       terrains: [
         {
           id: 1,
           title: "Terreno El Manzano",
           reflection:
-            "Este terreno inicial del semestre reforzó mi adaptación al entorno y la toma de decisiones en salidas de terreno.",
+            "Se abordaron técnicas de rafting y rapel, procedimientos básicos de RCP, progresión en mountainbike e interpretación del entorno, reforzando de forma transversal la coordinación y gestión de equipos.",
           mediaItems: [
             {
               type: "video",
@@ -122,7 +122,7 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
           id: 2,
           title: "Terreno Kayak",
           reflection:
-            "Este terreno fortaleció mi control técnico en agua y la coordinación del grupo en contextos acuáticos.",
+            "La experiencia permitió consolidar fundamentos técnicos de kayak: tipos de remada y apoyo, salidas húmedas, reingreso tipo cowboy, reconocimiento del equipo y lectura funcional de la embarcación.",
           mediaItems: [
             {
               type: "video",
@@ -135,7 +135,7 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
           id: 3,
           title: "Terreno Birdwatching",
           reflection:
-            "Desarrollé observación activa y lectura del entorno natural para interpretar biodiversidad y comportamiento de aves.",
+            "Se desarrollaron competencias de observación e interpretación ambiental aplicadas a la identificación de avifauna, fortaleciendo el enfoque de guiado en naturaleza.",
           mediaItems: [
             {
               type: "video",
@@ -148,7 +148,7 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
           id: 4,
           title: "Terreno Buceo Quintay",
           reflection:
-            "Esta experiencia reforzó protocolos de seguridad, técnica subacuática y trabajo colaborativo bajo supervisión.",
+            "Se implementó la progresión formativa de buceo desde piscina a mar abierto, finalizando con inmersión guiada bajo estándares de seguridad; complementariamente, se incorporó contexto patrimonial mediante visita al museo local de historia ballenera.",
           mediaItems: [
             {
               type: "video",
@@ -161,7 +161,7 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
           id: 5,
           title: "Terreno Cahuil",
           reflection:
-            "En Cahuil trabajé adaptación al entorno y gestión de recorrido, mejorando criterio operativo en terreno.",
+            "Se reforzaron técnicas de rafting, primeros auxilios y mecánica básica de bicicletas, junto con maniobras avanzadas de kayak, incluyendo el uso de flotador de remo y procedimientos complementarios de seguridad.",
           mediaItems: [
             {
               type: "video",
@@ -172,9 +172,9 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
         },
         {
           id: 6,
-          title: "Terreno El Pintor",
+          title: "Evaluación MAM",
           reflection:
-            "Este terreno consolidó toma de decisiones, lectura de condiciones y seguridad aplicada durante la actividad.",
+            "Corresponde a una instancia evaluativa integral (MAM), orientada a verificar el dominio técnico, la toma de decisiones operativas y la ejecución segura de procedimientos en terreno.",
           mediaItems: [
             {
               type: "video",
@@ -187,30 +187,58 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
     },
     {
       semester: "Semestre 3",
-      description: "Consolidación de planificación avanzada y enfoque en sostenibilidad turística.",
+      description: "Profundización técnica con certificación de buceo, trabajo en montaña y diseño de experiencias guiadas por el equipo.",
       period: "Marzo - Julio 2025",
       terrains: [
         {
           id: 1,
-          title: "Planificación de expedición",
+          title: "Certificaciones de buceo",
           reflection:
-            "Comprendí que una salida exitosa depende de logística clara, roles definidos y planes de contingencia realistas.",
+            "Este primer terreno se enfocó en la obtención de certificaciones de buceo, priorizando el cumplimiento de protocolos técnicos y estándares formales de seguridad.",
           mediaItems: [
             {
               type: "video",
-              label: "Espacio para video de planificación en terreno",
+              src: "/videos/semestre-3/terreno-quintay-2/terreno-quintay-2.MP4",
+              label: "Video del terreno Quintay (segunda salida)",
             },
           ],
         },
         {
           id: 2,
-          title: "Práctica de turismo sostenible",
+          title: "Vilches, equitación y cumbres",
           reflection:
-            "Reforcé el compromiso de proteger el entorno y educar a los visitantes para generar impacto positivo a largo plazo.",
+            "La salida integró progresión ecuestre y ascenso a cumbres, complementada con aplicación de cartografía, interpretación ambiental y observación de aves en contexto de terreno mixto.",
           mediaItems: [
             {
-              type: "image",
-              label: "Espacio para foto de buenas prácticas sostenibles",
+              type: "video",
+              src: "/videos/semestre-3/terreno-vilches/terreno-vilches.MP4",
+              label: "Video del terreno Vilches",
+            },
+          ],
+        },
+        {
+          id: 3,
+          title: "Terreno Rapel",
+          reflection:
+            "Se reforzaron contenidos de mecánica de bicicletas y atención prehospitalaria, incluyendo movilización de pacientes, vendajes e inmovilizaciones, junto con la actualización de maniobras técnicas de kayak.",
+          mediaItems: [
+            {
+              type: "video",
+              src: "/videos/semestre-3/terreno-rapel/terreno-rapel.mp4",
+              label: "Video del terreno Rapel",
+            },
+          ],
+        },
+        {
+          id: 4,
+          title: "City Tour de interpretación",
+          reflection:
+            "Terreno autogestionado orientado al diseño y ejecución de un city tour interpretativo, con énfasis en planificación de ruta, gestión de tiempos y conducción de grupos.",
+          mediaItems: [
+            {
+              type: "video",
+              src: "/videos/semestre-3/terreno-citytour/terreno-citytour.MP4",
+              label: "Video del terreno City Tour",
             },
           ],
         },
@@ -218,18 +246,19 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
     },
     {
       semester: "Semestre 4",
-      description: "Integración final de competencias técnicas, operativas y de gestión en terreno.",
+      description: "Cierre integral con escenarios exigentes de rescate, travesía y orientación, aplicando de forma real todo lo aprendido.",
       period: "Agosto - Diciembre 2025",
       terrains: [
         {
           id: 1,
-          title: "Experiencia de buceo",
+          title: "Terreno Bullileo",
           reflection:
-            "Esta etapa consolidó mi enfoque técnico y de autocuidado en actividades subacuáticas con trabajo coordinado.",
+            "Se planificó y ejecutó un escenario de rescate con distribución de funciones y logística operativa, incorporando primeros auxilios e interpretación en cascadas y museo del agua. Además, se realizó una primera travesía en kayak aplicando competencias previamente adquiridas.",
           mediaItems: [
             {
-              type: "image",
-              label: "Espacio para foto de inmersión",
+              type: "video",
+              src: "/videos/semestre-4/terreno-bullileo/terreno-bullielo.mp4",
+              label: "Video del terreno Bullileo",
             },
           ],
         },
@@ -237,11 +266,22 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
           id: 2,
           title: "Integración final de competencias",
           reflection:
-            "Logré conectar liderazgo, seguridad y sostenibilidad en salidas integrales, fortaleciendo mi perfil profesional.",
+            "Instancia final de integración en formato multijornada: trekking en el Enladrillado con interpretación, orientación GPS, cartografía y aplicación de NDR; posteriormente, enroque y travesía en kayak por el río Maule, evaluando gestión, administración y planificación operativa en terreno.",
           mediaItems: [
             {
+              type: "image",
+              src: "/videos/semestre-4/terreno-final/IMG_3419.JPG",
+              label: "Registro fotográfico del terreno final",
+            },
+            {
               type: "video",
-              label: "Espacio para video de cierre de semestre",
+              src: "/videos/semestre-4/terreno-final/terreno-final-01.mp4",
+              label: "Video del terreno final 1",
+            },
+            {
+              type: "video",
+              src: "/videos/semestre-4/terreno-final/terreno-final-02.mp4",
+              label: "Video del terreno final 2",
             },
           ],
         },
@@ -251,14 +291,14 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
   en: [
     {
       semester: "Semester 1",
-      description: "Early technical field training focused on safety and orientation skills.",
+      description: "Foundational mountain training focused on personal gear, safe movement, environmental interpretation, and Leave No Trace principles.",
       period: "March - July 2024",
       terrains: [
         {
           id: 1,
-          title: "Santuario de la Naturaleza fieldwork",
+          title: "Mountain approach fieldwork",
           reflection:
-            "This fieldwork helped me connect environmental observation, movement, and safe decision-making in a real natural setting.",
+            "This first mountain fieldwork focused on proper pole use, boot fitting and lacing, and technical clothing selection for upcoming activities.",
           mediaItems: [
             {
               type: "image",
@@ -276,7 +316,7 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
           id: 2,
           title: "Marching techniques fieldwork",
           reflection:
-            "This stage reinforced movement technique, effort control, and group pace reading during field progression.",
+            "We worked on marching techniques, cat arrest, natural interpretation, and descent techniques with and without gear.",
           mediaItems: [
             {
               type: "image",
@@ -302,9 +342,9 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
         },
         {
           id: 3,
-          title: "NDR fieldwork",
+          title: "Leave No Trace and camping fieldwork",
           reflection:
-            "This fieldwork adds practical evidence of the semester process and helps document progression through real activity records.",
+            "We practiced Leave No Trace techniques and learned how to set up a tent correctly in natural environments.",
           mediaItems: [
             {
               type: "video",
@@ -317,14 +357,14 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
     },
     {
       semester: "Semester 2",
-      description: "Practical application of leadership and control of outdoor activities in the field.",
+      description: "Operational consolidation through adventure activities: water skills, rescue basics, first aid, interpretation, and team management.",
       period: "August - December 2024",
       terrains: [
         {
           id: 1,
           title: "El Manzano fieldwork",
           reflection:
-            "This first fieldwork of the semester strengthened my environmental adaptation and decision-making during outings.",
+            "We practiced rafting and rapel techniques, CPR, mountain biking, interpretation, and teamwork management in group settings.",
           mediaItems: [
             {
               type: "video",
@@ -337,7 +377,7 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
           id: 2,
           title: "Kayak fieldwork",
           reflection:
-            "This fieldwork strengthened my technical control on water and group coordination in aquatic contexts.",
+            "We learned kayak techniques, paddle strokes, support types, wet exits, cowboy re-entry, kayak parts, and required equipment.",
           mediaItems: [
             {
               type: "video",
@@ -350,7 +390,7 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
           id: 3,
           title: "Birdwatching fieldwork",
           reflection:
-            "I developed active observation and environmental interpretation to identify biodiversity and bird behavior.",
+            "This fieldwork focused on identifying different bird species and improving environmental observation skills.",
           mediaItems: [
             {
               type: "video",
@@ -363,7 +403,7 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
           id: 4,
           title: "Quintay diving fieldwork",
           reflection:
-            "This experience reinforced safety protocols, underwater technique, and collaborative work under guidance.",
+            "We applied theoretical diving knowledge in pool sessions and then in the sea through a guided dive. We also visited the local museum related to the region's whaling history.",
           mediaItems: [
             {
               type: "video",
@@ -376,7 +416,7 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
           id: 5,
           title: "Cahuil fieldwork",
           reflection:
-            "In Cahuil I worked on environmental adaptation and route management, improving operational criteria in the field.",
+            "We reinforced rafting techniques, first aid, and bike workshop skills, while continuing kayak practice including paddle-float use.",
           mediaItems: [
             {
               type: "video",
@@ -387,9 +427,9 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
         },
         {
           id: 6,
-          title: "El Pintor fieldwork",
+          title: "MAM assessment fieldwork",
           reflection:
-            "This fieldwork consolidated decision-making, condition assessment, and applied safety during activities.",
+            "This fieldwork corresponded to the MAM assessment, where we had to demonstrate integrated technical and operational competencies.",
           mediaItems: [
             {
               type: "video",
@@ -402,30 +442,58 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
     },
     {
       semester: "Semester 3",
-      description: "Consolidation of advanced planning and sustainable tourism practices.",
+      description: "Advanced semester focused on diving certification, mountain progression, and team-designed guided experiences.",
       period: "March - July 2025",
       terrains: [
         {
           id: 1,
-          title: "Expedition planning",
+          title: "Diving certifications fieldwork",
           reflection:
-            "I understood that a successful outing depends on clear logistics, defined roles, and realistic contingency plans.",
+            "The first fieldwork of the semester focused on completing diving certifications and reinforcing technical and safety standards.",
           mediaItems: [
             {
               type: "video",
-              label: "Placeholder for planning video",
+              src: "/videos/semestre-3/terreno-quintay-2/terreno-quintay-2.MP4",
+              label: "Quintay fieldwork video (second visit)",
             },
           ],
         },
         {
           id: 2,
-          title: "Sustainable tourism practice",
+          title: "Vilches, horseback riding, and summits",
           reflection:
-            "I reinforced my commitment to protecting natural spaces and educating visitors for long-term positive impact.",
+            "We learned horseback riding and summit progression with horses, while also practicing cartography, interpretation, and birdwatching.",
           mediaItems: [
             {
-              type: "image",
-              label: "Placeholder for sustainability practice photo",
+              type: "video",
+              src: "/videos/semestre-3/terreno-vilches/terreno-vilches.MP4",
+              label: "Vilches fieldwork video",
+            },
+          ],
+        },
+        {
+          id: 3,
+          title: "Rapel fieldwork",
+          reflection:
+            "We repeated bike workshop and mechanics, first aid, patient mobilization, bandaging, immobilization, and reinforced kayak techniques.",
+          mediaItems: [
+            {
+              type: "video",
+              src: "/videos/semestre-3/terreno-rapel/terreno-rapel.mp4",
+              label: "Rapel fieldwork video",
+            },
+          ],
+        },
+        {
+          id: 4,
+          title: "Interpretive City Tour fieldwork",
+          reflection:
+            "This was a self-managed fieldwork where we designed and led an interpretive city tour, organizing timing and group guidance.",
+          mediaItems: [
+            {
+              type: "video",
+              src: "/videos/semestre-3/terreno-citytour/terreno-citytour.MP4",
+              label: "City Tour fieldwork video",
             },
           ],
         },
@@ -433,18 +501,19 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
     },
     {
       semester: "Semester 4",
-      description: "Final integration of technical, operational, and field management competencies.",
+      description: "Comprehensive closing stage with rescue scenarios, long traverses, and real-world application of all prior competencies.",
       period: "August - December 2025",
       terrains: [
         {
           id: 1,
-          title: "Diving experience",
+          title: "Bullileo fieldwork",
           reflection:
-            "This stage consolidated my technical focus and self-care approach in underwater activities with team coordination.",
+            "We planned a rescue operation, split logistics and roles, applied first aid, and completed interpretation activities at waterfalls and the water museum. We also faced our first kayak traverse, applying previously learned techniques.",
           mediaItems: [
             {
-              type: "image",
-              label: "Placeholder for diving photo",
+              type: "video",
+              src: "/videos/semestre-4/terreno-bullileo/terreno-bullielo.mp4",
+              label: "Bullileo fieldwork video",
             },
           ],
         },
@@ -452,11 +521,22 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
           id: 2,
           title: "Final skills integration",
           reflection:
-            "I connected leadership, safety, and sustainability in integrated field activities, strengthening my professional profile.",
+            "In this multi-day final fieldwork we completed trekking at Ladrillado with interpretation, GPS orientation, cartography, and Leave No Trace. We later performed an enroque and a kayak traverse across the Maule River, testing management, administration, and planning. We closed the process with a group dinner.",
           mediaItems: [
             {
+              type: "image",
+              src: "/videos/semestre-4/terreno-final/IMG_3419.JPG",
+              label: "Final fieldwork photo record",
+            },
+            {
               type: "video",
-              label: "Placeholder for semester closing video",
+              src: "/videos/semestre-4/terreno-final/terreno-final-01.mp4",
+              label: "Final fieldwork video 1",
+            },
+            {
+              type: "video",
+              src: "/videos/semestre-4/terreno-final/terreno-final-02.mp4",
+              label: "Final fieldwork video 2",
             },
           ],
         },
@@ -521,9 +601,6 @@ export function PortfolioSection() {
       terrainLabel: "Terreno",
       reflectionLabel: "Reflexión:",
       mediaEmpty: "Aún no hay archivos cargados para este terreno.",
-      noteLabel: "Nota:",
-      note:
-        "Puedes reemplazar cada espacio multimedia por fotos o videos reales de tus terrenos en cada semestre.",
     },
     en: {
       overline: "Visual Logbook",
@@ -532,9 +609,6 @@ export function PortfolioSection() {
       terrainLabel: "Fieldwork",
       reflectionLabel: "Reflection:",
       mediaEmpty: "There are no uploaded files for this fieldwork yet.",
-      noteLabel: "Note:",
-      note:
-        "You can replace each multimedia placeholder with real photos or videos from each semester fieldwork.",
     },
   }[locale];
 
@@ -605,13 +679,6 @@ export function PortfolioSection() {
           ))}
         </Accordion>
 
-        {/* Info Note */}
-        <div className="mt-8 flex items-start gap-3 p-4 bg-accent/10 border border-accent/20 rounded-lg max-w-2xl mx-auto">
-          <Info className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-          <p className="text-sm text-muted-foreground">
-            <strong className="text-foreground">{t.noteLabel}</strong> {t.note}
-          </p>
-        </div>
       </div>
     </section>
   );
