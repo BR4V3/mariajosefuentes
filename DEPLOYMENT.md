@@ -84,6 +84,15 @@ git push origin main
 
 ---
 
-**Dominio personalizado**: _[Ingresa aquí tu dominio]_
+**URL Temporal Actual**: https://mariajosefuentes-1ravomyf7-ramirezvegabenjamin-7810s-projects.vercel.app
+
+**Dominio personalizado**: _[A completar cuando obtengas tu dominio]_
+
+---
+
+## 🚀 Estado Actual del Proyecto
+- ✅ Deployado en Vercel
+- ✅ URL temporal generada
+- ✅ Próximo paso: Agregar dominio personalizado
 
 Última actualización: 26 de abril de 2026
