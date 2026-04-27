@@ -64,13 +64,13 @@ export function AboutSection() {
       overline: "Conóceme",
       title: "Sobre mí",
       description:
-        "Destaco por mi comunicación, organización y enfoque orientado al cliente, buscando siempre entregar experiencias seguras, positivas y bien guiadas. Me interesa desarrollar mi carrera en turismo, especialmente en actividades outdoor, guiado y servicios de turismo sostenible.",
+        "Me caracterizo por una comunicación efectiva, organización operativa y orientación al servicio, competencias que me permiten diseñar y conducir experiencias turísticas seguras, educativas y de alto estándar. Mi proyección profesional está enfocada en el turismo aventura y subacuático, integrando guiado, sostenibilidad y calidad en la experiencia del visitante.",
     },
     en: {
       overline: "Get to Know Me",
       title: "About Me",
       description:
-        "I stand out for my communication, organization, and customer-oriented approach, always aiming to provide safe, positive, and well-guided experiences. I am interested in developing my career in tourism, especially in outdoor activities, guiding, and sustainable tourism services.",
+        "I am recognized for effective communication, operational organization, and a service-oriented approach, which allow me to design and deliver safe, educational, and high-standard tourism experiences. My professional development is focused on adventure and underwater tourism, integrating guiding, sustainability, and visitor experience quality.",
     },
   }[locale];
 

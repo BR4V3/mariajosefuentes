@@ -32,6 +32,12 @@ interface SemesterPortfolio {
   terrains: TerrainItem[];
 }
 
+interface PracticePortfolio {
+  title: string;
+  subtitle: string;
+  item: TerrainItem;
+}
+
 const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
   es: [
     {
@@ -545,6 +551,43 @@ const portfolioBySemester: Record<"es" | "en", SemesterPortfolio[]> = {
   ],
 };
 
+const professionalPracticeByLocale: Record<"es" | "en", PracticePortfolio> = {
+  es: {
+    title: "Práctica profesional",
+    subtitle: "Experiencia formativa en contexto real de operación turística subacuática.",
+    item: {
+      id: 1,
+      title: "Práctica en Los Molles",
+      reflection:
+        "Desarrollé mi práctica profesional en Los Molles, desempeñándome en un centro de buceo con residencia en terreno y participación activa en la operación diaria. Esta experiencia fortaleció mis competencias técnicas, de servicio y de seguridad, y me permitió obtener certificaciones clave para iniciar mi trayectoria profesional en buceo turístico.",
+      mediaItems: [
+        {
+          type: "video",
+          src: "/videos/practica/los-molles/practica-los-molles.mp4",
+          label: "Sube aquí el video de la práctica en Los Molles",
+        },
+      ],
+    },
+  },
+  en: {
+    title: "Professional internship",
+    subtitle: "Field-based training experience in a real underwater tourism operation.",
+    item: {
+      id: 1,
+      title: "Los Molles diving internship",
+      reflection:
+        "I completed my professional internship in Los Molles, living and working at a diving center while actively supporting daily operations. This experience strengthened my technical, safety, and service competencies, and allowed me to obtain key certifications to begin my professional path in tourism diving.",
+      mediaItems: [
+        {
+          type: "video",
+          src: "/videos/practica/los-molles/practica-los-molles.mp4",
+          label: "Upload the Los Molles internship video here",
+        },
+      ],
+    },
+  },
+};
+
 function TerrainMediaCarousel({ items, emptyLabel }: { items: TerrainMediaItem[]; emptyLabel: string }) {
   const validItems = items.filter((item) => item.src);
 
@@ -593,6 +636,7 @@ function TerrainMediaCarousel({ items, emptyLabel }: { items: TerrainMediaItem[]
 
 export function PortfolioSection() {
   const { locale } = useLanguage();
+  const practice = professionalPracticeByLocale[locale];
   const t = {
     es: {
       overline: "Bitácora visual",
@@ -679,6 +723,39 @@ export function PortfolioSection() {
           ))}
         </Accordion>
 
+
+        {/* Professional Practice */}
+        <div className="mt-12">
+          <div className="mb-6 text-center">
+            <h3 className="text-2xl font-bold text-foreground sm:text-3xl text-balance">
+              {practice.title}
+            </h3>
+            <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">
+              {practice.subtitle}
+            </p>
+          </div>
+
+          <Card className="group border-border bg-card overflow-hidden">
+            <CardContent className="p-0 md:grid md:grid-cols-2">
+              <div className="bg-secondary p-6 transition-colors group-hover:bg-primary/10">
+                <TerrainMediaCarousel items={practice.item.mediaItems} emptyLabel={t.mediaEmpty} />
+              </div>
+              <div className="flex items-center">
+                <div className="p-6">
+                  <p className="text-xs font-medium uppercase tracking-[0.2em] text-primary">
+                    {t.terrainLabel} {practice.item.id}
+                  </p>
+                  <h4 className="text-xl font-semibold text-foreground text-balance">
+                    {practice.item.title}
+                  </h4>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                    <strong className="text-foreground">{t.reflectionLabel}</strong> {practice.item.reflection}
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </section>
   );

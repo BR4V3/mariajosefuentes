@@ -108,6 +108,32 @@ const semesters: Record<"es" | "en", Semester[]> = {
         },
       ],
     },
+    {
+      name: "Semestre 4",
+      period: "Agosto - Diciembre 2025",
+      activities: [
+        {
+          title: "Terreno Bullileo: rescate e integración operativa",
+          description:
+            "Planificación y ejecución de un escenario de rescate en terreno, con asignación de roles, logística de equipo, aplicación de primeros auxilios, interpretación ambiental y travesía inicial en kayak.",
+          skills: ["Gestión de rescate", "Primeros auxilios", "Coordinación de roles", "Travesía en kayak"],
+          reflection:
+            "Esta experiencia exigió aplicar competencias técnicas en un contexto de mayor presión operativa, fortaleciendo la toma de decisiones, la coordinación grupal y la seguridad en actividades de turismo aventura.",
+          location: "Bullileo",
+          date: "Septiembre 2025",
+        },
+        {
+          title: "Integración final de competencias",
+          description:
+            "Salida multijornada con trekking en Enladrillado, interpretación, orientación con GPS, cartografía y aplicación de principios NDR; posteriormente, enroque y travesía en kayak por el río Maule.",
+          skills: ["Orientación GPS", "Cartografía", "NDR", "Planificación operativa"],
+          reflection:
+            "Fue una instancia de cierre donde integré gestión, administración y ejecución técnica en terreno real, consolidando competencias clave para desempeñarme profesionalmente en turismo aventura.",
+          location: "Enladrillado y río Maule",
+          date: "Noviembre 2025",
+        },
+      ],
+    },
   ],
   en: [
     {
@@ -185,6 +211,32 @@ const semesters: Record<"es" | "en", Semester[]> = {
             "Sustainability is essential in adventure tourism. Protecting natural areas and educating visitors supports responsible experiences in the long term.",
           location: "Various Locations",
           date: "June 2025",
+        },
+      ],
+    },
+    {
+      name: "Semester 4",
+      period: "August - December 2025",
+      activities: [
+        {
+          title: "Bullileo Fieldwork: rescue and operational integration",
+          description:
+            "Planned and executed a field rescue scenario including role allocation, team logistics, first aid application, environmental interpretation, and an initial kayak traverse.",
+          skills: ["Rescue management", "First aid", "Role coordination", "Kayak traverse"],
+          reflection:
+            "This experience required applying technical competencies under higher operational pressure, strengthening decision-making, team coordination, and safety in adventure tourism activities.",
+          location: "Bullileo",
+          date: "September 2025",
+        },
+        {
+          title: "Final competency integration",
+          description:
+            "Multi-day outing including trekking in Enladrillado, interpretation, GPS orientation, cartography, and Leave No Trace practices; followed by enroque and a kayak traverse on the Maule River.",
+          skills: ["GPS orientation", "Cartography", "Leave No Trace", "Operational planning"],
+          reflection:
+            "This final stage allowed me to integrate management, administration, and technical execution in real field conditions, consolidating key competencies for professional performance in adventure tourism.",
+          location: "Enladrillado and Maule River",
+          date: "November 2025",
         },
       ],
     },

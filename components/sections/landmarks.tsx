@@ -17,38 +17,70 @@ interface Country {
   landmarks: string[];
 }
 
-const countries: Country[] = [
-  {
-    name: "Chile",
-    flag: "🇨🇱",
-    landmarks: [
-      "Torres del Paine",
-      "San Pedro de Atacama",
-      "Valle de la Luna",
-      "Parque Nacional Lauca",
-      "Cajón del Maipo",
-      "Carretera Austral",
-      "Chiloé Island",
-      "Parque Nacional La Campana",
-      "Lake District",
-      "Easter Island",
-    ],
-  },
-  {
-    name: "Argentina",
-    flag: "🇦🇷",
-    landmarks: [
-      "Perito Moreno Glacier",
-      "Iguazú Falls",
-      "Bariloche",
-      "Mendoza Wine Region",
-      "Ushuaia",
-      "Salta & Jujuy",
-      "Los Glaciares National Park",
-      "Fitz Roy",
-    ],
-  },
-];
+const countriesByLocale: Record<"es" | "en", Country[]> = {
+  es: [
+    {
+      name: "Chile",
+      flag: "🇨🇱",
+      landmarks: [
+        "Torres del Paine",
+        "San Pedro de Atacama",
+        "Valle de la Luna",
+        "Parque Nacional Lauca",
+        "Cajón del Maipo",
+        "Carretera Austral",
+        "Isla de Chiloé",
+        "Parque Nacional La Campana",
+        "Zona de los Lagos",
+      ],
+    },
+    {
+      name: "Argentina",
+      flag: "🇦🇷",
+      landmarks: [
+        "Glaciar Perito Moreno",
+        "Cataratas del Iguazú",
+        "Bariloche",
+        "Región vitivinícola de Mendoza",
+        "Ushuaia",
+        "Salta y Jujuy",
+        "Parque Nacional Los Glaciares",
+        "Fitz Roy",
+      ],
+    },
+  ],
+  en: [
+    {
+      name: "Chile",
+      flag: "🇨🇱",
+      landmarks: [
+        "Torres del Paine",
+        "San Pedro de Atacama",
+        "Valley of the Moon",
+        "Lauca National Park",
+        "Cajon del Maipo",
+        "Carretera Austral",
+        "Chiloe Island",
+        "La Campana National Park",
+        "Lake District",
+      ],
+    },
+    {
+      name: "Argentina",
+      flag: "🇦🇷",
+      landmarks: [
+        "Perito Moreno Glacier",
+        "Iguazu Falls",
+        "Bariloche",
+        "Mendoza Wine Region",
+        "Ushuaia",
+        "Salta and Jujuy",
+        "Los Glaciares National Park",
+        "Fitz Roy",
+      ],
+    },
+  ],
+};
 
 export function LandmarksSection() {
   const { locale } = useLanguage();
@@ -89,7 +121,7 @@ export function LandmarksSection() {
 
         {/* Countries Grid */}
         <div className="grid gap-8 md:grid-cols-2">
-          {countries.map((country) => (
+          {countriesByLocale[locale].map((country) => (
             <Card
               key={country.name}
               className="border-border bg-card overflow-hidden group hover:shadow-lg transition-shadow"

@@ -19,7 +19,7 @@ export function HeroSection() {
       subtitle: "Estudiante de Turismo Aventura",
       profileAlt: "Foto de perfil de María José Fuentes",
       description:
-        "Estudiante de Técnico en Turismo Aventura con experiencia en atención al cliente y participación en actividades en terreno. Soy una persona responsable, proactiva y adaptable, con sólidas habilidades de trabajo en equipo y capacidad para interactuar con distintos tipos de clientes.",
+        "Estudiante de Técnico en Turismo Aventura con formación práctica en montaña, medios acuáticos y guiado interpretativo. Cuento con experiencia en atención al cliente y participación activa en operaciones de terreno, aplicando protocolos de seguridad, trabajo colaborativo y adaptación a distintos contextos operativos.",
       viewExperience: "Ver experiencia",
       downloadCV: "Descargar CV",
     },
@@ -27,7 +27,7 @@ export function HeroSection() {
       subtitle: "Adventure Tourism Student",
       profileAlt: "Profile photo of Maria Jose Fuentes",
       description:
-        "Adventure Tourism Technician student with experience in customer service and participation in field activities. I am a responsible, proactive, and adaptable person with strong teamwork skills and the ability to interact with different types of clients.",
+        "Adventure Tourism Technician student with practical training in mountain environments, aquatic activities, and interpretive guiding. I have customer service experience and active participation in field operations, applying safety protocols, collaborative teamwork, and adaptability across diverse operational contexts.",
       viewExperience: "View Experience",
       downloadCV: "Download CV",
     },
